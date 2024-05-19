@@ -17,6 +17,15 @@
 			<div class="card-body">
 				<p class="card-text">Hướng dẫn sử dụng màn hình <strong>Thống kê điểm số</strong>.</p>
 				<img src="images/thongkediemso.png" class="img-fluid mx-auto d-block" />
+				<h4 class="mt-3"><a name="loc">Lọc kết quả điểm số</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Nhập giá trị vào các ô txtTuDiem và txtDenDiem để chỉ định khoảng điểm cần lọc.
+				<p><strong>Bước 2:</strong> Nhấn nút "Lọc Kết Quả".
+				<p><strong>Bước 3:</strong> Chương trình sẽ kiểm tra giá trị nhập vào trong các ô điểm Nếu cả hai ô trống, chương trình sẽ tải lại toàn bộ dữ liệu điểm số và hiển thị báo cáo như ban đầu. Nếu chỉ có txtTuDiem được nhập, chương trình sẽ lọc và hiển thị các điểm số lớn hơn hoặc bằng giá trị nhập vào. Nếu chỉ có txtDenDiem được nhập, chương trình sẽ lọc và hiển thị các điểm số nhỏ hơn hoặc bằng giá trị nhập vào. Nếu cả hai ô đều được nhập, chương trình sẽ lọc và hiển thị các điểm số trong khoảng từ giá trị nhập vào của txtTuDiem đến giá trị nhập vào của txtDenDiem.
+				<p><strong>Bước 4:</strong> Dữ liệu đã lọc sẽ được nạp vào danhSachDiemDataTable.
+				<p><strong>Bước 5:</strong> Thiết lập lại ReportDataSource với dữ liệu đã lọc và thiết lập lại đường dẫn tới tệp báo cáo (rptThongKeDiemSo.rdlc).
+				<p><strong>Bước 6:</strong> Cập nhật tham số báo cáo MoTaKetQuaHienThi để mô tả kết quả lọc.
+				<p><strong>Bước 7:</strong> Báo cáo sẽ được làm mới và hiển thị với dữ liệu đã lọc.
 			</div>
 		</div>
 		

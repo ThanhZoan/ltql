@@ -17,6 +17,15 @@
 			<div class="card-body">
 				<p class="card-text">Hướng dẫn sử dụng màn hình <strong>Thống kê đăng kí học phần</strong>.</p>
 				<img src="images/thongkedangkihocphan.png" class="img-fluid mx-auto d-block" />
+				<h4 class="mt-3"><a name="loc">Lọc kết quả điểm số</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Chọn giá trị từ các ComboBox cboTenHocPhan và cboTenSinhVien để lọc dữ liệu.
+				<p><strong>Bước 2:</strong> Nhấn nút "Lọc Kết Quả".
+				<p><strong>Bước 3:</strong> Chương trình sẽ kiểm tra giá trị chọn trong các ComboBox: Nếu cả hai ComboBox đều bỏ trống, chương trình sẽ tải lại toàn bộ dữ liệu đăng ký học phần và hiển thị báo cáo như ban đầu. Nếu chỉ có cboTenSinhVien được chọn, chương trình sẽ lọc và hiển thị các đăng ký học phần của sinh viên được chọn. Nếu chỉ có cboTenHocPhan được chọn, chương trình sẽ lọc và hiển thị các đăng ký học phần thuộc học phần được chọn. Nếu cả hai ComboBox đều được chọn, chương trình sẽ lọc và hiển thị các đăng ký học phần của sinh viên được chọn và thuộc học phần được chọn.
+				<p><strong>Bước 4:</strong> Dữ liệu đã lọc sẽ được nạp vào danhSachDangKiHocPhanDataTable.
+				<p><strong>Bước 5:</strong> Thiết lập lại ReportDataSource với dữ liệu đã lọc và thiết lập lại đường dẫn tới tệp báo cáo (rptThongKeDangKiHocPhan.rdlc).
+				<p><strong>Bước 6:</strong> Cập nhật tham số báo cáo MoTaKetQuaHienThi để mô tả kết quả lọc.
+				<p><strong>Bước 7:</strong> Báo cáo sẽ được làm mới và hiển thị với dữ liệu đã lọc.
 			</div>
 		</div>
 		
