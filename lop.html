@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<title>Khối lớp - ITShop.VN</title>
+</head>
+
+<body>
+	<div class="container">
+		<div id="navbar"></div>
+		
+		<div class="card mt-3">
+			<div class="card-header">Lớp</div>
+			<div class="card-body">
+				<p class="card-text">Hướng dẫn sử dụng màn hình <strong>Lớp</strong>.</p>
+				<img src="images/lop.png" class="img-fluid mx-auto d-block" />
+				<h4 class="mt-3"><a name="danhsach">Danh sách lớp</a></h4>
+				<hr />
+				<p><strong>Cách dùng:</strong> Chọn Dữ liệu: Nhấp chuột vào hàng trong DataGridView để chọn lớp cần sửa hoặc xóa, sửa Dữ liệu: Chọn hàng, nhấn Sửa, chỉnh sửa thông tin và nhấn Lưu, xóa Dữ liệu: Chọn hàng, nhấn Xóa và xác nhận, cập nhật DataGridView: Sau mỗi thao tác, nạp lại dữ liệu để cập nhật thông tin mới nhất.
+				
+				<h4 class="mt-3"><a name="them">Thêm lớp</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Nhấn nút Thêm.
+				<p><strong>Bước 2:</strong> Các điều khiển (các nút, combobox, textbox) sẽ được kích hoạt.
+				<p><strong>Bước 3:</strong> Combobox cboNganh được làm trống.
+				<p><strong>Bước 4:</strong> Textbox txtTenLop được xóa nội dung.
+				
+				<h4 class="mt-3"><a name="sua">Sửa lớp</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Chọn lớp học cần sửa từ DataGridView.
+				<p><strong>Bước 2:</strong> Nhấn nút Sửa.
+				<p><strong>Bước 3:</strong> Các điều khiển (các nút, combobox, textbox) sẽ được kích hoạt.
+				<p><strong>Bước 4:</strong> Biến id được gán giá trị ID của lớp học được chọn.
+				
+				<h4 class="mt-3"><a name="xoa">Xóa lớp</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Chọn lớp học cần xóa từ DataGridView.
+				<p><strong>Bước 2:</strong> Nhấn nút Xóa.
+				<p><strong>Bước 3:</strong> Hiển thị hộp thoại xác nhận xóa.
+				<p><strong>Bước 4:</strong> Nếu xác nhận, tìm đối tượng Lop cần xóa bằng ID.
+				<p><strong>Bước 5:</strong> Xóa đối tượng khỏi cơ sở dữ liệu và lưu thay đổi.
+				<p><strong>Bước 6:</strong> Tải lại dữ liệu và giao diện ban đầu.
+				
+				<h4 class="mt-3"><a name="nhap">Lưu lớp</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Nhấn nút Lưu.
+				<p><strong>Bước 2:</strong> Nếu combobox cboNganh hoặc textbox txtTenLop để trống, hiển thị thông báo lỗi.
+				<p><strong>Bước 3:</strong> Nếu là thêm mới (biến xuLyThem là true): Tạo đối tượng Lop mới và gán giá trị từ các điều khiển. Thêm đối tượng vào cơ sở dữ liệu và lưu thay đổi.
+				<p><strong>Bước 4:</strong> Nếu là sửa (biến xuLyThem là false): Tìm đối tượng Lop cần sửa bằng ID. Cập nhật giá trị từ các điều khiển và lưu thay đổi.
+				<p><strong>Bước 5:</strong> Tải lại dữ liệu và giao diện ban đầu.
+				
+				<h4 class="mt-3"><a name="nhap">Nhập lớp từ Excel</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Nhấn nút Nhập.
+				<p><strong>Bước 2:</strong> Hiển thị hộp thoại chọn tập tin Excel.
+				<p><strong>Bước 3:</strong> Chọn tập tin cần nhập và nhấn Open.
+				<p><strong>Bước 4:</strong> Đọc dữ liệu từ tập tin Excel vào đối tượng DataTable.
+				<p><strong>Bước 5:</strong> Thêm dữ liệu vào cơ sở dữ liệu và lưu thay đổi.
+				<p><strong>Bước 5:</strong> Hiển thị thông báo thành công và tải lại dữ liệu.
+				
+				<h4 class="mt-3"><a name="xuat">Xuất lớp ra Excel</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Nhấn nút Xuất.
+				<p><strong>Bước 2:</strong> Hiển thị hộp thoại lưu tập tin Excel.
+				<p><strong>Bước 3:</strong> Chọn nơi lưu và đặt tên tập tin, sau đó nhấn Save.
+				<p><strong>Bước 4:</strong> Tạo đối tượng DataTable và thêm dữ liệu lớp học vào bảng.
+				<p><strong>Bước 5:</strong> Tạo workbook Excel và lưu dữ liệu vào tập tin.
+				<p><strong>Bước 6:</strong> Hiển thị thông báo thành công.
+			</div>
+		</div>
+		
+		<div id="footer"></div>
+	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script>
+		$(document).ready(() => {
+			$('#navbar').load('navbar.html');
+			$('#footer').load('footer.html');
+		});
+	</script>
+</body>
+
+</html>

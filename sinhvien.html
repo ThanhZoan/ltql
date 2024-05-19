@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<title>Sinh viên - ITShop.VN</title>
+</head>
+
+<body>
+	<div class="container">
+		<div id="navbar"></div>
+		
+		<div class="card mt-3">
+			<div class="card-header">Sinh viên</div>
+			<div class="card-body">
+				<p class="card-text">Hướng dẫn sử dụng màn hình <strong>Sinh viên</strong>.</p>
+				<img src="images/sinhvien.png" class="img-fluid mx-auto d-block" />
+				<h4 class="mt-3"><a name="danhsach">Danh sách sinh viên</a></h4>
+				<hr />
+				<p><strong>Cách dùng:</strong> Chọn Dữ liệu: Nhấp chuột vào hàng trong DataGridView để chọn sinh viên cần sửa hoặc xóa, sửa Dữ liệu: Chọn hàng, nhấn Sửa, chỉnh sửa thông tin và nhấn Lưu, xóa Dữ liệu: Chọn hàng, nhấn Xóa và xác nhận, cập nhật DataGridView: Sau mỗi thao tác, nạp lại dữ liệu để cập nhật thông tin mới nhất.
+				
+				<h4 class="mt-3"><a name="them">Thêm sinh viên</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Nhấn nút "Thêm".
+				<p><strong>Bước 2:</strong> Các trường nhập liệu sẽ được kích hoạt (có thể chỉnh sửa).
+				<p><strong>Bước 3:</strong> Chọn lớp từ combo box cboLop, chọn giới tính từ combo box cboGioiTinh.Nhập tên sinh viên vào txtTenSinhVien.Chọn ngày sinh từ dtpNgaySinh.
+				<p><strong>Bước 4:</strong> Nhấn nút "Lưu" để lưu thông tin sinh viên mới.
+				
+				<h4 class="mt-3"><a name="sua">Sửa sinh viên</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Chọn một sinh viên từ danh sách (trong dataGridView).
+				<p><strong>Bước 2:</strong> Nhấn nút "Sửa".
+				<p><strong>Bước 3:</strong> Các trường nhập liệu sẽ được kích hoạt (có thể chỉnh sửa).
+				<p><strong>Bước 4:</strong> Chỉnh sửa thông tin sinh viên cần thay đổi.
+				<p><strong>Bước 5:</strong> Nhấn nút "Lưu" để lưu các thay đổi.
+				
+				<h4 class="mt-3"><a name="xoa">Xóa sinh viên</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Chọn một sinh viên từ danh sách (trong dataGridView).
+				<p><strong>Bước 2:</strong> Nhấn nút "Xóa".
+				<p><strong>Bước 3:</strong> Một hộp thoại xác nhận sẽ xuất hiện, nhấn "Yes" để xác nhận xóa.
+				<p><strong>Bước 4:</strong> Sinh viên sẽ bị xóa khỏi cơ sở dữ liệu và danh sách sẽ được cập nhật lại.
+				
+				<h4 class="mt-3"><a name="nhap">Lưu sinh viên</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Sau khi thêm hoặc chỉnh sửa thông tin sinh viên, nhấn nút "Lưu".
+				<p><strong>Bước 2:</strong> Nếu thiếu thông tin yêu cầu, thông báo lỗi sẽ hiển thị.
+				<p><strong>Bước 3:</strong> Nếu tất cả thông tin hợp lệ, dữ liệu sẽ được lưu vào cơ sở dữ liệu và giao diện sẽ cập nhật lại danh sách sinh viên.
+		
+				
+				<h4 class="mt-3"><a name="nhap">Nhập sinh viên từ Excel</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Nhấn nút "Nhập"
+				<p><strong>Bước 2:</strong> Chọn tập tin Excel cần nhập.
+				<p><strong>Bước 3:</strong> Nhấn "Open" để mở tập tin.
+				<p><strong>Bước 4:</strong> Dữ liệu từ tập tin Excel sẽ được đọc và thêm vào cơ sở dữ liệu.
+				<p><strong>Bước 5:</strong> Một thông báo sẽ xuất hiện khi việc nhập dữ liệu thành công.
+				
+				<h4 class="mt-3"><a name="xuat">Xuất sinh viên ra Excel</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Nhấn nút "Xuất".
+				<p><strong>Bước 2:</strong> Chọn nơi lưu tập tin và đặt tên tập tin.
+				<p><strong>Bước 3:</strong> Nhấn "Save" để lưu tập tin.
+				<p><strong>Bước 4:</strong> Một thông báo sẽ xuất hiện khi việc xuất dữ liệu thành công
+			</div>
+		</div>
+		
+		<div id="footer"></div>
+	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script>
+		$(document).ready(() => {
+			$('#navbar').load('navbar.html');
+			$('#footer').load('footer.html');
+		});
+	</script>
+</body>
+
+</html>

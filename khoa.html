@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+	<title>Khoa - ITShop.VN</title>
+</head>
+
+<body>
+	<div class="container">
+		<div id="navbar"></div>
+		
+		<div class="card mt-3">
+			<div class="card-header">Khoa trường</div>
+			<div class="card-body">
+				<p class="card-text">Hướng dẫn sử dụng màn hình <strong>Khoa</strong>.</p>
+				<img src="images/khoa.png" class="img-fluid mx-auto d-block" />
+				<h4 class="mt-3"><a name="danhsach">Danh sách khoa</a></h4>
+				<hr />
+				<p><strong>Cách dùng:</strong> Chọn Dữ liệu: Nhấp chuột vào hàng trong DataGridView để chọn khoa cần sửa hoặc xóa, sửa Dữ liệu: Chọn hàng, nhấn Sửa, chỉnh sửa thông tin và nhấn Lưu, xóa Dữ liệu: Chọn hàng, nhấn Xóa và xác nhận, cập nhật DataGridView: Sau mỗi thao tác, nạp lại dữ liệu để cập nhật thông tin mới nhất.
+				
+				<h4 class="mt-3"><a name="them">Thêm khoa</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Nhấn vào nút Thêm.
+				<p><strong>Bước 2:</strong> Các trường nhập liệu sẽ được kích hoạt. Xóa nội dung hiện tại nếu có.
+				<p><strong>Bước 3:</strong> Nhập tên khoa vào ô txtTenKhoa.
+				<p><strong>Bước 4:</strong> Nhấn vào nút Lưu để lưu khoa mới vào cơ sở dữ liệu.
+				<p><strong>Bước 5:</strong> Danh sách các khoa sẽ được tải lại và hiển thị khoa mới.
+				
+				<h4 class="mt-3"><a name="sua">Sửa khoa</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Chọn bản ghi cần chỉnh sửa từ bảng dữ liệu.
+				<p><strong>Bước 2:</strong> Nhấn vào nút Sửa.
+				<p><strong>Bước 3:</strong> Các trường nhập liệu sẽ được kích hoạt.
+				<p><strong>Bước 4:</strong> Sửa tên khoa trong ô txtTenKhoa theo ý muốn.
+				<p><strong>Bước 5:</strong> Nhấn vào nút Lưu để lưu các thay đổi vào cơ sở dữ liệu.
+				<p><strong>Bước 6:</strong> Danh sách các khoa sẽ được tải lại và hiển thị khoa đã chỉnh sửa.
+				
+				<h4 class="mt-3"><a name="xoa">Xóa khoa</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Chọn bản ghi cần xóa từ bảng dữ liệu.
+				<p><strong>Bước 2:</strong> Nhấn vào nút Xóa.
+				<p><strong>Bước 3:</strong> Xác nhận việc xóa trong hộp thoại xác nhận.
+				<p><strong>Bước 4:</strong> Nếu xác nhận, bản ghi đã chọn sẽ bị xóa khỏi cơ sở dữ liệu.
+				<p><strong>Bước 5:</strong> Danh sách các khoa sẽ được tải lại và không còn hiển thị khoa đã xóa.
+				
+				
+				<h4 class="mt-3"><a name="nhap">Nhập khoa từ Excel</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Nhấn vào nút Nhập.
+				<p><strong>Bước 2:</strong> Chọn tập tin Excel cần nhập trong hộp thoại mở tập tin.
+				<p><strong>Bước 3:</strong> Nhấn Open để bắt đầu quá trình nhập dữ liệu.
+				<p><strong>Bước 4:</strong> Dữ liệu từ tập tin Excel sẽ được đọc và nhập vào cơ sở dữ liệu.
+				<p><strong>Bước 5:</strong> Một hộp thoại xác nhận sẽ hiển thị thông báo nhập dữ liệu thành công và số lượng dòng đã nhập.
+				<p><strong>Bước 6:</strong> Danh sách các khoa sẽ được tải lại và hiển thị dữ liệu đã nhập.
+				
+				<h4 class="mt-3"><a name="xuat">Xuất khoa ra Excel</a></h4>
+				<hr />
+				<p><strong>Bước 1:</strong> Nhấn vào nút Xuất.
+				<p><strong>Bước 2:</strong> Chọn vị trí và tên tập tin trong hộp thoại lưu tập tin.
+				<p><strong>Bước 3:</strong> Nhấn Save để xuất dữ liệu ra tập tin Excel.
+				<p><strong>Bước 4:</strong> Một hộp thoại xác nhận sẽ hiển thị thông báo xuất dữ liệu thành công.
+			</div>
+		</div>
+		
+		<div id="footer"></div>
+	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script>
+		$(document).ready(() => {
+			$('#navbar').load('navbar.html');
+			$('#footer').load('footer.html');
+		});
+	</script>
+</body>
+
+</html>
